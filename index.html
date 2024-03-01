@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Library</title>
 </head>
 <body>
+    <form action="" class="form" id="form">
+        <label for="title">Title of the book
+        </label>
+        <input type="text" id="title" placeholder="mahabharat" required>
+        <label for="author">author
+        </label>
+        <input type="text" id="author" placeholder="vedabyas" required>
+
+        <label for="pages">No of Pages
+        </label>
+        <input type="number" id="pages" placeholder="1700" required>
+
+        <label for="read">Have you already read it
+        </label>
+        <input type="checkbox" id="read" value="read" >
+        <button type="submit">submit</button>
+    </form>
+
     <div class="container">
-        <div class="add"></div>
-        <div class="space">
-            <div class="box" id="box1">boxes</div>
-            <div class="box" id="box2">boxes</div>
-            <div class="box" id="box3">boxes</div>
-            <div class="box" id="box4">boxes</div>
-            <div class="box" id="box5">boxes</div>
+        <div class="add" ><button id="add">Add Book</button></div>
+        <div class="space" id="space">
         </div>
     </div>
     <script src="script.js"></script>
